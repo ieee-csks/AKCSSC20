@@ -21,6 +21,34 @@ a{
 	text-decoration: none;
 }
 
+/********************************************************************************************
+											about 
+*********************************************************************************************/
+
+
+.about{
+	height:auto;	
+	display:grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+	margin-left: 2%;
+}
+
+#about-grid1{
+	width:80%;
+	font-size: 14px;
+	text-align: left;
+}
+
+#about-grid2{
+	font-size: 14px;
+	text-align: left;
+}
+
+.about-image {
+	max-width: 600px;
+	max-height: 250px;
+}
 
 /********************************************************************************************
 											gallery 
