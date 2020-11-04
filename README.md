@@ -41,7 +41,7 @@ Sponsor Section
 
 Gallery section
 
- - [ ] Images need to be changed
+ - [X] Images need to be changed
  - [ ] Title for each image need to be changed
 
 Footer section
