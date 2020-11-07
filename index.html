@@ -20,15 +20,32 @@
 
 
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/nav.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 
     <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 
 </head>
 <body>
+
+      
+    <header>
+        <nav class="top-nav">
+            <img src="./assets/images/IEEE-CS_Kerala-orange.png" class="nav-logo" alt="">
+            <ul class="navbar">
+                <li class="navbar-item"><a href="#">Home</a></li>
+                <li class="navbar-item"><a href="#">About</a></li>
+                <li class="navbar-item"><a href="#">Speakers</a></li>
+                <li class="navbar-item"><a href="#">Events</a></li>
+                <li class="navbar-item"><a href="#">Contact</a></li>
+            </ul>
+            <a href="" id="nav-register-button">Register</a>
+        </nav>
+    </header>
+
+
     <main>
-        <section class="landing">
-         
+        <section data-index="0" class="landing">
           <img src="./assets/images/AKCSSC_2020_Black.png" class="akcssc-image">
         </section>
       </main>
@@ -48,7 +65,7 @@
       <div class="slider"></div>
       
 
-    <section id="about">
+    <section data-index="1" id="about">
         <div class="container">
             <h2>About</h2>
             <div class="container-inner">
@@ -67,11 +84,11 @@
         </div>
     </section>
 
-    <section id="speakers">
+    <section data-index="3" id="speakers">
         speaker
     </section>
     
-    <section id="sponsors">
+    <section data-index="4" id="sponsors">
         <div class="container">
             <h2>Our Sponsors</h2>
             <div class="container-inner">
@@ -132,55 +149,57 @@
     </section>
 
     <footer id="contact">
-            <div class="footer-logo desktop">
-                <div class="bottom-logo-container">
-                    <img src="./assets/images/IEEE-CS_Kerala-orange.png" id="bottom-logo" alt="IEEE Computer Society Kerala Chapter Logo">
-                </div>
-                <p id="mail">Drop in your suggesions and queries <a href="mailto:ieeecsks@gmail.com">ieeecsks@gmail.com</a></p>
-            </div> 
-            <div class="contact">
-                <div class="register">
-                    <a href="#" id="register-button">Register Now</a>
-                </div>
-                <div class="navigation">
-                    <nav>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Speakers</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </nav>
-                </div>
-                <div class="social">
-                    <div class="icons">
-                        <a href="https://www.facebook.com/IEEECSKS/">a</a>
-                        <a href="https://twitter.com/ieeecsks">a</a>
-                        <a href="https://www.instagram.com/ieeecsks/">a</a>
-                        <a href="https://www.youtube.com/channel/UCQnULcEX9NzkxWu2N9LqyQA">a</a>    
-                    </div>
-
-                    <div class="footer-logo hidden">
-                        <div class="bottom-logo-container ">
-                            <img src="./assets/images/IEEE-CS_Kerala-white.png" id="bottom-logo" alt="IEEE Computer Society Kerala Chapter Logo">
-                        </div>
-                        <p id="mail">Drop in your suggesions and queries <a href="mailto:ieeecsks@gmail.com">ieeecsks@gmail.com</a></p>
-                    </div> 
-
-                    <div class="copyright">
-                        Website design by
-                        <div>
-                            <a href="#">Jacob Abraham</a> &amp; <a href="#">Rithin Jose</a>
-                        </div>
-                    </div>
-                </div>
-                
+        <div class="footer-logo desktop">
+            <div class="bottom-logo-container">
+                <img src="./assets/images/IEEE-CS_Kerala-orange.png" id="bottom-logo" alt="IEEE Computer Society Kerala Chapter Logo">
             </div>
-    </footer>
+            <p id="mail">Drop in your suggesions and queries <a href="mailto:ieeecsks@gmail.com">ieeecsks@gmail.com</a></p>
+        </div> 
+        <div class="contact">
+            <div class="register">
+                <a href="#" id="register-button">Register Now</a>
+            </div>
+            <div class="navigation">
+                <nav>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Speakers</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </nav>
+            </div>
+            <div class="social">
+                <div class="icons">
+                    <a href="https://www.facebook.com/IEEECSKS/">a</a>
+                    <a href="https://twitter.com/ieeecsks">a</a>
+                    <a href="https://www.instagram.com/ieeecsks/">a</a>
+                    <a href="https://www.youtube.com/channel/UCQnULcEX9NzkxWu2N9LqyQA">a</a>    
+                </div>
 
+                <div class="footer-logo hidden">
+                    <div class="bottom-logo-container ">
+                        <img src="./assets/images/IEEE-CS_Kerala-white.png" id="bottom-logo" alt="IEEE Computer Society Kerala Chapter Logo">
+                    </div>
+                    <p id="mail">Drop in your suggesions and queries <a href="mailto:ieeecsks@gmail.com">ieeecsks@gmail.com</a></p>
+                </div> 
+
+                <div class="copyright">
+                    Website design by
+                    <div>
+                        <a href="#">Jacob Abraham</a> &amp; <a href="#">Rithin Jose</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+</footer>
+    
+
+    <script src="./assets/script/rellax.js"></script>
     <script src='./assets/script/anime.min.js'></script>
     <script src='./assets/script/pieces.min.js'></script>
-    <script src='./assets/script/demo.js'></script>
+    
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
         integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="

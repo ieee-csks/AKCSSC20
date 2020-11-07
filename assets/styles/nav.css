@@ -1,0 +1,82 @@
+header{
+    top: 0px;
+}
+
+nav.top-nav{
+    min-width: 10vh;
+    margin:auto;
+    widows: 90%;
+    display: flex;
+    align-items: center;
+    padding-top:15px;
+    justify-content: space-between;
+}
+
+nav.top-nav img{
+    align-self: center;
+    width: 20%;
+    max-width: 100px;
+    height: auto;
+    padding:20px;
+    padding-left:30px;
+}
+
+
+nav.top-nav img.nav-logo,
+nav.top-nav ul{
+    flex:1;
+}
+
+nav.top-nav ul{
+    font-size: 0.8rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+}
+
+nav.top-nav li{
+    margin-right: 15px;
+    padding: 20px
+}
+
+nav.top-nav a{
+    text-decoration: none;
+    color: var(--darkgreen-color);
+    
+}
+
+nav.top-nav li a:hover{
+    color:var(--lightgreen-color);
+    border-bottom: 2px solid var(--lightgreen-color);
+}
+
+#nav-register-button{
+    background-color: var(--lightgreen-color);
+    margin-right: 60px;
+    padding: 20px 60px;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* desk */
+@media screen and (max-width: 1199.98px) {
+	
+}
+
+/* lap */
+@media screen and (max-width: 991.98px) {
+   .navbar{
+       display: none;
+   }
+}
+
+/* Tab */
+@media screen and (max-width: 850px) {
+
+}
+
+/* Mobile */
+@media screen and (max-width: 575.98px) {
+
+}
