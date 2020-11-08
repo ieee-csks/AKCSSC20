@@ -67,7 +67,7 @@ nav.top-nav li a:hover{
 /* lap */
 @media screen and (max-width: 991.98px) {
    .navbar{
-       display: none;
+       display: none !important;
    }
 }
 

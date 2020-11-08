@@ -221,3 +221,4 @@ tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
 tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
 tl.fromTo(".akcssc-image", { opacity: 0 }, { opacity: 1, duration: 2 }, "-=1");
+tl.fromTo(".date-location",{y:0,autoAlpha:0,transformOrigin:'center center'},{y:'-=15',scale:1,autoAlpha:1,transformOrigin:'center center'},'-=1');

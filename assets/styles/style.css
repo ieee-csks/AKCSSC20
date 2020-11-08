@@ -38,13 +38,105 @@ h2{
 	color: var(--mediumgreen-color);
 }
 
+/********************************************************************************************
+											rellax pattern styles 
+*********************************************************************************************/
+.rellax{
+	position: absolute;
+}
+.d1{
+	top:40%;
+	left:10%;
+}
+
+.d2{
+	top:5%;
+	left:30%;
+}
+
+.d3{
+	top:65%;
+	left:30%;
+}
+
+.d4{
+	top:85%;
+	left:5%;
+}
+.d6{
+	top:90%;
+	left:90%;
+}
+
+.d7{
+	top:87%;
+	left:50%;
+}
+
+.d8{
+	top:55%;
+	left:70%;
+}
+
+.d9{
+	top:25%;
+	left:85%;
+}
+  
+.d10{
+	top:15%;
+	left:65%;
+}
+  
+
+  .floating-triangle1{
+	width:60px;
+	height:60px;
+	transform: rotate(-70deg);
+  }
+  .floating-triangle2{ 
+	width:60px;
+	height:60px;
+	transform: rotate(40deg);
+  }
+
+  .floating-triangle3{
+	width:60px;
+	height:60px;
+	transform: rotate(-10deg);
+  }
+
+  .floating-triangle4{
+	width:60px;
+	height:60px;
+	transform: rotate(-190deg);
+  }
+
+  .floating-triangle5{ 
+	width:60px;
+	height:60px;
+	transform: rotate(-80deg);
+  }
+  
+  .floating-triangle6{
+	width:60px;
+	height:60px;
+	transform: rotate(-40deg);
+  }
+
+  .floating-triangle7{
+	width:60px;
+	height:60px;
+	transform: rotate(40deg);
+  }
 
 /********************************************************************************************
-											landing page 
+									landing page & loading animation
 *********************************************************************************************/
 
 .landing {
-	height: 100vh;
+	height: 90vh;
+	
   }
   
   .akcssc-image {
@@ -54,7 +146,37 @@ h2{
 	transform: translate(-50%, -50%);
 	height:160px;
   }
-  
+
+  .date-location{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	display: flex;
+  }
+  .date-location div{	
+	  text-transform: uppercase;
+	  font-weight: 300;
+	  font-size: 19px;
+  }
+	.date-location .date{
+		margin-right: 50px;
+
+	}
+	.date-location .location{
+		margin-left: 50px;
+	}
+	.date-location i{
+		font-size: 30px;
+		margin-bottom: 15px;
+		color:var(--darkgreen-color)
+	}
+
+	.date-location {
+		font-size: 30px;
+	}
+
   .intro {
 	background: var(--darkgreen-color);
 	position: fixed;
@@ -113,6 +235,14 @@ h2{
 	  .akcssc-image {
 		height:120px;
 	  }
+	  .date-location i{
+		font-size: 25px;
+		margin-bottom: 15px;
+	}
+
+	.date-location div{
+		font-size: 17px;
+	}
 }
 
 /* Mobile */
@@ -458,6 +588,9 @@ footer .contact{
  color:#fff
 }
 
+i{
+	font-size:16px
+}
 .copyright a{
 	padding: 0;
 	color: var(--white-color);
