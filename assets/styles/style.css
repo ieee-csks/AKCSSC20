@@ -20,12 +20,21 @@ section{
 	--mediumgreen-color: #48530f;
 }
 
+html{
+	scrollbar-color: var(--darkgreen-color) rgba(109, 117, 31,0.1);
+}
+
+body{
+	background-color: rgba(109, 117, 31,0.1);
+}
+
 a{
 	text-decoration: none;
 }
 
 .container{
-	margin:10%;
+	margin-left:10%;
+	margin-right:10%;
 }
 .container .container-inner{
 	padding:5% 0%;
@@ -36,6 +45,9 @@ h2{
 	font-weight: 900;
 	text-align: center;
 	color: var(--mediumgreen-color);
+}
+body::-webkit-scrollbar{
+	color: royalblue;
 }
 
 /********************************************************************************************
@@ -88,45 +100,35 @@ h2{
 	left:65%;
 }
   
-
-  .floating-triangle1{
+[class^="floating-triangle"]{
 	width:60px;
 	height:60px;
+}
+
+  .floating-triangle1{
 	transform: rotate(-70deg);
   }
   .floating-triangle2{ 
-	width:60px;
-	height:60px;
 	transform: rotate(40deg);
   }
 
   .floating-triangle3{
-	width:60px;
-	height:60px;
 	transform: rotate(-10deg);
   }
 
   .floating-triangle4{
-	width:60px;
-	height:60px;
 	transform: rotate(-190deg);
   }
 
   .floating-triangle5{ 
-	width:60px;
-	height:60px;
 	transform: rotate(-80deg);
   }
   
   .floating-triangle6{
-	width:60px;
-	height:60px;
 	transform: rotate(-40deg);
   }
 
   .floating-triangle7{
-	width:60px;
-	height:60px;
 	transform: rotate(40deg);
   }
 
@@ -243,6 +245,18 @@ h2{
 	.date-location div{
 		font-size: 17px;
 	}
+	.d3{
+		top:65%;
+		left:15%;
+	}
+	.d6{
+		top:85%;
+		left:85%;
+	}
+	[class^="floating-triangle"]{
+		width:45px;
+		height:45px;
+	}
 }
 
 /* Mobile */
@@ -253,8 +267,17 @@ h2{
 	  .akcssc-image {
 		height:90px;
 	  }
+	  [class^="floating-triangle"]{
+		width:30px;
+		height:30px;
+	}
+	.d2{
+		top:20%;
+		left:30%;
+	}
 }
-  
+
+
 /********************************************************************************************
 											about 
 *********************************************************************************************/
@@ -262,9 +285,6 @@ section#about{
 	height: auto;
 }
 
-#about h2{
-	text-align: left;
-}
 #about .container .container-inner{
 	display:grid;
 	text-align: left;
@@ -325,6 +345,117 @@ section#about{
 	}
 }
 
+/********************************************************************************************
+											Speakers
+*********************************************************************************************/
+section#speakers{
+	height: auto;
+}
+
+.event-wrapper-left .event-image{
+	box-shadow: -15px 15px 0px var(--lightgreen-color);
+}
+
+.event-wrapper-left div.event{
+	position: relative;
+	display: inline-block;
+
+}
+
+.event-wrapper-left div.event::after{
+	font-size: 30px;
+	padding: 30px;
+	background-color: var(--lightgreen-color);
+	position: absolute;
+	display: inline-block;
+	top:50%;
+	right:-20%	
+}
+.event-wrapper-left div#pre-events::after{
+	content: "Pre Events";
+}
+.event-wrapper-left div#talks::after{
+	content: "Talks";
+}
+
+.event-wrapper-right .event-image{
+	box-shadow: 15px 15px 0px var(--lightgreen-color);
+}
+
+.event-wrapper-right div.event{
+	position: relative;
+	display: inline-block;
+	left:65%;
+}
+
+.event-wrapper-right div.event::after{
+	content: "Pre Events";
+	font-size: 30px;
+	padding: 30px;
+	background-color: var(--lightgreen-color);
+	position: absolute;
+	display: inline-block;
+	top:50%;
+	left:-20%	
+}
+.event-wrapper-right div#actual-events::after{
+	content: "Events";
+}
+.event-wrapper-right div#sessions::after{
+	content: "Sessions";
+}
+
+/* lap */
+@media screen and (max-width: 991.98px) {
+	.event img{
+		width: auto;
+		height:350px;
+	}
+	.event-wrapper-right div.event{
+		
+		left:58%;
+	}
+	.event-wrapper-right div.event::after{
+		font-size: 25px;
+		padding: 25px;	
+	}
+	.event-wrapper-left div.event::after{
+		font-size: 25px;
+		padding: 25px;
+	}
+
+}
+
+/* Tab */
+@media screen and (max-width: 775.98px) {
+
+	.event img{
+		width: auto;
+		height:300px;
+	}
+	.event-wrapper-right div.event{
+		left:52%;
+	}
+	.event-wrapper-right div.event::after{
+		font-size: 20px;
+		padding: 20px;	
+	}
+	.event-wrapper-left div.event::after{
+		font-size: 20px;
+		padding: 20px;
+	}
+	.event-wrapper-right{
+		margin:60px 0px;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 575.98px) {
+	.event-wrapper-right div.event{
+		left:10%;
+	}
+}
+  
 /********************************************************************************************
 											Sponsors 
 *********************************************************************************************/

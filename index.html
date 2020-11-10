@@ -35,8 +35,8 @@
         <nav class="top-nav">
             <img src="./assets/images/IEEE-CS_Kerala-orange.png" class="nav-logo" alt="">
             <ul class="navbar">
-                <li class="navbar-item"><a href="#">Home</a></li>
-                <li class="navbar-item"><a href="#">About</a></li>
+                <li class="navbar-item"><a href="#landing">Home</a></li>
+                <li class="navbar-item"><a href="#about">About</a></li>
                 <li class="navbar-item"><a href="#">Speakers</a></li>
                 <li class="navbar-item"><a href="#">Events</a></li>
                 <li class="navbar-item"><a href="#">Contact</a></li>
@@ -48,34 +48,34 @@
 
     <main>
         <section class="landing">
-            <div class="rellax d1">
+            <div class="rellax d1" data-rellax-speed="2">
                 <img src="./assets/images/pattern1.png" class="floating-triangle1"/>
             </div>
-            <div class="rellax d2">
+            <div class="rellax d2" data-rellax-speed="1">
                 <img src="./assets/images/pattern2.png" class="floating-triangle2"/>
             </div>
-            <div class="rellax d3">
+            <div class="rellax d3" data-rellax-speed="2">
                 <img src="./assets/images/pattern3.png" class="floating-triangle3"/>
             </div>
-            <div class="rellax d4">
+            <div class="rellax d4" data-rellax-speed="1">
                 <img src="./assets/images/pattern4.png" class="floating-triangle4"/>
             </div>
-            <div class="rellax">
+            <div class="rellax" data-rellax-speed="1">
                 <img src="./assets/images/pattern5.png" class="floating-triangle5"/>
             </div>
-            <div class="rellax d6">
+            <div class="rellax d6" data-rellax-speed="2">
                 <img src="./assets/images/pattern1.png" class="floating-triangle6"/>
             </div>
-            <div class="rellax d7">
+            <div class="rellax d7" data-rellax-speed="2">
                 <img src="./assets/images/pattern2.png" class="floating-triangle2"/>
             </div>
-            <div class="rellax d8">
+            <div class="rellax d8" data-rellax-speed="3">
                 <img src="./assets/images/pattern3.png" class="floating-triangle7"/>
             </div>
-            <div class="rellax d9">
+            <div class="rellax d9" data-rellax-speed="1">
                 <img src="./assets/images/pattern4.png" class="floating-triangle4"/>
             </div>
-            <div class="rellax d10">
+            <div class="rellax d10" data-rellax-speed="3">
                 <img src="./assets/images/pattern5.png" class="floating-triangle5"/>
             </div>
           
@@ -103,7 +103,14 @@
       
 
     <section data-index="1" id="about">
+       
         <div class="container">
+            <div class="rellax d9" data-rellax-speed="1">
+                <img src="./assets/images/pattern4.png" class="floating-triangle4"/>
+            </div>
+            <div class="rellax d10" data-rellax-speed="3">
+                <img src="./assets/images/pattern5.png" class="floating-triangle5"/>
+            </div>
             <h2>About</h2>
             <div class="container-inner">
                 <div class="about-text">
@@ -121,11 +128,43 @@
         </div>
     </section>
 
-    <section data-index="3" id="speakers">
-        speaker
+    <section id="speakers">
+        <div class="container">
+            <h2>Events</h2>
+            <div class="container-inner">
+                <div class="event-wrapper-left">
+                    <div id="pre-events" class="event">
+                        <a href="" >
+                            <img src="./assets/images/mathew-kane.jpg"  class="event-image" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="event-wrapper-right">
+                    <div id="actual-events" class="event">
+                        <a href="" >
+                            <img src="./assets/images/mathew-kane.jpg"  class="event-image" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="event-wrapper-left">
+                    <div id="talks" class="event">
+                        <a href="">
+                            <img src="./assets/images/mathew-kane.jpg"  class="event-image" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="event-wrapper-right">
+                    <div id="sessions" class="event">
+                        <a href="">
+                            <img src="./assets/images/mathew-kane.jpg"  class="event-image" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     
-    <section data-index="4" id="sponsors">
+    <section id="sponsors">
         <div class="container">
             <h2>Our Sponsors</h2>
             <div class="container-inner">
@@ -137,16 +176,7 @@
                 </div>
                 <div class="sponsor">
                     <a href="#"><img src="./assets/images/IEEE-CS_Kerala-orange.png" alt=""></a>
-                </div>          
-                <div class="sponsor">
-                    TBD
-                </div>
-                <div class="sponsor">
-                    TBD
-                </div>
-                <div class="sponsor">
-                    TBD
-                </div>          
+                </div>      
             </div>
         </div>
     </section>
@@ -200,7 +230,6 @@
                 <nav>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Speakers</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Contact</a></li>
