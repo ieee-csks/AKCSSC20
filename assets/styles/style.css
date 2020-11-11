@@ -33,8 +33,8 @@ a{
 }
 
 .container{
-	margin-left:10%;
-	margin-right:10%;
+	margin: 5% 10%;
+
 }
 .container .container-inner{
 	padding:5% 0%;
@@ -46,9 +46,7 @@ h2{
 	text-align: center;
 	color: var(--mediumgreen-color);
 }
-body::-webkit-scrollbar{
-	color: royalblue;
-}
+
 
 /********************************************************************************************
 											rellax pattern styles 
@@ -348,7 +346,7 @@ section#about{
 /********************************************************************************************
 											Speakers
 *********************************************************************************************/
-section#speakers{
+section#events{
 	height: auto;
 }
 
