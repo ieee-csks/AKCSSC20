@@ -31,7 +31,7 @@ nav.top-nav ul{
     font-size: 0.8rem;
     list-style-type: none;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 nav.top-nav li{

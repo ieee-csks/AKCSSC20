@@ -23,7 +23,7 @@
 
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="./assets/styles/nav.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4c017459af.js" crossorigin="anonymous"></script>
     <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
@@ -94,12 +94,87 @@
             <div class="container-inner">
                 <div class="event-wrapper-left">
                     <div class="event">
-                        <a href="" >
-                            <img src="./assets/images/comingsoon.webp"  class="event-image" alt="AKCSSC pre-events">
-                            <span>Event</span>
+                        <a id="modal1" href="#animatedModal1">
+                            <img src="./assets/images/events/uichallenge.webp"  class="event-image" alt="AKCSSC pre-events">
+                            <span>UI Challenge</span>
                         </a>
                     </div>
                 </div>
+
+                <!--modal Box-->
+                <div id="animatedModal1">
+                    <div  id="btn-close-modal" class="close-animatedModal1">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                            <path fill="none" d="M12.71,7.291c-0.15-0.15-0.393-0.15-0.542,0L10,9.458L7.833,7.291c-0.15-0.15-0.392-0.15-0.542,0c-0.149,0.149-0.149,0.392,0,0.541L9.458,10l-2.168,2.167c-0.149,0.15-0.149,0.393,0,0.542c0.15,0.149,0.392,0.149,0.542,0L10,10.542l2.168,2.167c0.149,0.149,0.392,0.149,0.542,0c0.148-0.149,0.148-0.392,0-0.542L10.542,10l2.168-2.168C12.858,7.683,12.858,7.44,12.71,7.291z M10,1.188c-4.867,0-8.812,3.946-8.812,8.812c0,4.867,3.945,8.812,8.812,8.812s8.812-3.945,8.812-8.812C18.812,5.133,14.867,1.188,10,1.188z M10,18.046c-4.444,0-8.046-3.603-8.046-8.046c0-4.444,3.603-8.046,8.046-8.046c4.443,0,8.046,3.602,8.046,8.046C18.046,14.443,14.443,18.046,10,18.046z"></path>
+                        </svg>
+                     </div>
+                     <div class="modal-content" style="color: var(--white-color);">
+                        <h1 class="moodal-heading">UI Challenge</h1>
+
+                        <h3 class="sub-heading">Rules</h3>
+
+                        Five themes will be provided. Participants can choose a problem statement from them and should submit the final draft before 
+                        <strong>25th November 2020</strong>.
+                        Divided into two categories:- <br>
+                        <ol class="moodal-list">
+                            <li>Girls only</li>
+                            <li>General</li>
+                        </ol>
+
+                        <h3 class="sub-heading">Guidelines</h3>
+                        Master challenge in 5 steps<br><br>
+
+                        <strong>Problem Statement - Step 1</strong><br>
+
+                        Go through the problem definitions to find out which one you can work wonders on. Select the best problem statement and start working on it.
+
+                        <br><br><strong>Audience - Step 2</strong><br>
+
+                        Learn more about an audience that will use your future solution. Who they are?
+                        <ol class="moodal-list">
+                            <li>List what are the categories of people you want to focus on.</li>
+                            <li>List what potential motivations and fears (concerns) your category might have.</li>
+                            <li>List potential situations (when and where) people face a problem you solving.</li>
+                            <li>List ideas through what digital products you can offer your solution to the audience.</li>
+                        </ol>
+
+                        <br><br><strong>Products - Step 3</strong><br>
+                        <strong>“There is probably an app for that”</strong>. Look for the apps and services that already trying to solve this problem. Make a list:
+                        <ul class="dash-list moodal-list">
+                            <li>&nbsp;Products that already work with your audience</li>
+                            <li>&nbsp;How many users they have (estimations)</li>
+                            <li>&nbsp;What their missions are</li>
+                            <li>&nbsp;How they make money (business model)</li>
+                        </ul>
+
+                        <br><br><strong>Solutions - Step 4</strong><br>
+                        Note ideas of features that can extend existing apps' missions and help to solve a problem. For each idea figure out:
+                        <ul class="dash-list moodal-list">
+                            <li>&nbsp;Feature description</li>
+                            <li>&nbsp;How users will benefit from it</li>
+                            <li>&nbsp;How a company might benefit from it</li>
+                        </ul><br>
+                        And then start prototyping.
+
+                        <br><br><strong>Submission  - Step 5</strong><br>
+
+                        Using our guides prepare your submission and apply via <strong>AKCSSC website</strong>.
+                        
+
+                        <br><br><strong>Themes:-</strong><br>
+                        <ol class="moodal-list">
+                            <li>AKCSSC Website Revamp</li>
+                            <li>Design an Audiobook or Podcasting mobile app that is highly personal, highly interactive, and with the ability to bring even more utility to the user than a book ever could.</li>
+                            <li>Music Player App.</li>
+                            <li>Design a file management system accessed and organised through Virtual Reality.</li>
+                            <li>Design an interface that gives homeowners the ability to get information about their house, via IoT devices, from a remote location.</li>
+                        </ol>  
+                        <div class="register-modal">
+                            <a href="/akcssc20/details.html" id="register-button-modal">Register Now</a>
+                        </div>                   
+                    </div>
+                </div>
+
                 <div class="event-wrapper-right">
                     <div class="event">
                         <a href="" >
@@ -178,6 +253,11 @@
         crossorigin="anonymous"
     ></script>
     <script src="./assets/script/app.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./assets/script/animatedModal.min.js"></script>
+    <script>
+        $("#modal1").animatedModal();
+      </script>
     <script>
         var rellax = new Rellax('.rellax', {
         // center: true
